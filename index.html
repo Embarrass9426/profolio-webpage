@@ -12,24 +12,26 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <meta name="theme-color" content="#000000">
 </head>
 <body>
 <div class="container">
     <header>
         <h1>Shum, Ming Hei Matthew</h1>
-        <p>mhmshum@connect.ust.hk | (852) 67670173 | <a href="https://www.linkedin.com/in/matthew-shum-436149350/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
     </header>
-        <nav class="navbar">
+    <div class="profile-pic">
+        <img src="profile.jpg" alt="Profile Picture" width="150" height="150" style="border-radius: 50%;">
+    </div>
+    <nav class="navbar">
         <a href="#about-me">About Me</a>
         <a href="#education">Education</a>
         <a href="#certificates">Certificates</a>
         <a href="#extracurricular-activities">Extracurricular Activities</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </nav>
-    <div class="profile-pic">
-        <img src="profile.jpg" alt="Profile Picture" width="150" height="150" style="border-radius: 50%;">
-    </div>
     <hr>
     <section class="section-box" id="about-me">
         <h2>About Me</h2>
@@ -52,14 +54,25 @@
         <h3>The Hong Kong University of Science and Technology (HKUST)</h3>
         <p>Bachelor of Engineering in Computer Engineering (2024 - 2028)</p>
         <h3>Relevant Coursework:</h3>
-        <p> COMP 2211: Naive Bayes, KNN, K-means, MLP, CNN, Minimax with Alpha Beta Pruning</p>
-        <p> COMP 1021: Python (Proficient)</p>
+        <p>COMP 2211</p>
+        <div class="skills">
+            <span class="skill-badge">Naive Bayes</span>
+            <span class="skill-badge">KNN</span>
+            <span class="skill-badge">K means</span>
+            <span class="skill-badge">MLP</span>
+            <span class="skill-badge">CNN</span>
+            <span class="skill-badge">Minimax</span>
+        </div> 
+        <p>COMP 1021</p>
+        <div class="skills">
+            <span class="skill-badge">Python</span>
+        </div>
     </section>
     <hr>
     <section class="section-box" id="certificates">
         <h2>Certificates</h2>
         <ul>
-            <li><a href ="https://coursera.org/share/e6ce44a4b15a52df505f9e8d77f6314a" target="_blank" rel="noopener noreferrer">Google Cybersecurity Professional Certificate</a></li>
+            <a href ="https://coursera.org/share/e6ce44a4b15a52df505f9e8d77f6314a" target="_blank" rel="noopener noreferrer"><li>Google Cybersecurity Professional Certificate</li></a>
             <li>IBM Full Stack Software Developer Professional Certificate (In Progress)</li>
         </ul>
     </section>
@@ -72,10 +85,61 @@
     <hr>
     <section class="section-box" id="skills">
         <h2>Skills</h2>
-        <p>Programming Languages: Python, JavaScript, HTML, CSS</p>
-        <p>Frameworks & Libraries: React, Node.js, Express.js, Flask</p>
-        <p>Machine Learning: SVM, Random Forests, Gradient Boosting, XGBoost, LightGBM, CatBoost, Linear Regression, Logistic Regression, Multimodal Regression</p>
-        <p>Data Cleaning, Preprocessing, and Visualization: Pandas, Matplotlib, Seaborn, Numpy</p>
+        <h3>Programming Languages</h3>
+            <div class="skills">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">HTML/CSS</span>
+            </div>
+        <h3>Frameworks & Libraries</h3>
+            <div class="skills">
+                <span class="skill-badge">React</span>
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">Express.js</span>
+                <span class="skill-badge">Flask</span>
+            </div>
+        <h3>Machine Learning</h3>
+            <div class="skills">
+                <span class="skill-badge">SVM</span>
+                <span class="skill-badge">Random Forests</span>
+                <span class="skill-badge">Gradient Boosting</span>
+                <span class="skill-badge">XGBoost</span>
+                <span class="skill-badge">LightGBM</span>
+                <span class="skill-badge">CatBoost</span>
+                <span class="skill-badge">Linear Regression</span>
+                <span class="skill-badge">Logistic Regression</span>
+                <span class="skill-badge">Multimodal Regression</span>
+            </div>
+        <h3>Data Cleaning, Preprocessing, and Visualization</h3>
+            <div class="skills">
+                <span class="skill-badge">Pandas</span>
+                <span class="skill-badge">NumPy</span>
+                <span class="skill-badge">Matplotlib</span>
+                <span class="skill-badge">Seaborn</span>
+            </div>
     </section>
+    <hr>
+    <section class="section-box" id="projects">
+        <h2>Projects</h2>
+        <a href="https://github.com/Embarrass9426/temperature-predictor" target="_blank" rel="noopener noreferrer"><h3>Global Weather Predictor</h3></a>
+        <p>Built a Temperature Predictor using Random Forest Regressor trained on global weather data, 
+            leveraging weather, air quality, astronomical info, and geospatial features to predict real-time temperature in Celsius.</p>
+    </section>
+    <hr>
+    <section class="section-box" id="contact">
+        <h2>Contact</h2>
+        <div class="icon-buttons">
+            <a href="tel:+85267670173"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://github.com/Embarrass9426" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/em6arrassss___" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/matthew-shum-436149350/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:mhmshum@connect.ust.hk" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </section>
+    <hr>
+    <footer>
+        <p>&copy; 2025 Matthew Shum. All rights reserved.</p>
+    </footer>
+</div>
 </body>
 </html>
