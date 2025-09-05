@@ -1,0 +1,117 @@
+/* ===== Base Reset ===== */
+body {
+    background-color: #1a1a1a; /* very dark background */
+    color: #E0E0E0; /* light text */
+    font-family: 'Google Sans', sans-serif;
+    margin: 20px; /* fixed missing unit */
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #E0E0E0; /* consistent heading color */
+}
+
+p, li {
+    color: #e0e0e0c3; /* softer light text */
+    line-height: 1.6;
+}
+
+a {
+    color: #238ffc; /* link color */
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #444; /* subtle divider */
+    margin: 20px 0;
+}
+
+/* ===== Container (Profile Intro) ===== */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Google Sans', sans-serif;
+    background-color: #2d2d2d;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #E0E0E0;
+}
+
+.profile-pic {
+    margin: 20px 0;
+}
+
+/* ===== Shared Section Box Style ===== */
+.section-box {
+    text-align: justify;
+    max-width: 600px;
+    margin: 0 auto 2em;
+    padding: 1em;
+    background: #2d2d2d; 
+    border-radius: 8px;
+}
+
+.section-box h2 {
+    margin-bottom: 0.5em;
+    color: #E0E0E0;
+}
+
+.section-box h3 {
+    color: #E0E0E0;
+}
+
+.section-box p {
+    margin-bottom: 1em;
+}
+
+/* ===== Certificates List Style ===== */
+.certificates ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.certificates li {
+    margin-bottom: 0.5em;
+}
+/* ===== Navigation Style ===== */
+nav {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+nav a {
+    padding: auto 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #E0E0E0;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav a:hover {
+    background: #393E46;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        display: block;
+        width: 100%;
+        margin: 0.5em 0;
+        text-align: center;
+        font-size: 1.1em;
+    }
+}
